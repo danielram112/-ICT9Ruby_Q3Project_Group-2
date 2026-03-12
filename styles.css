@@ -1,0 +1,106 @@
+body{
+    background-image: url('https://mastinlabs.com/cdn/shop/articles/how-to-do-long-exposure-photography-893146_2048x.jpg?v=1660021613');
+    background-size: cover;
+}
+.main-card{
+    background: rgba(120, 180, 190, 0.65);
+    backdrop-filter: blur(8px);
+    border-radius:15px;
+    padding:40px;
+    text-align:center;
+    max-width:850px;
+    margin:auto;
+    margin-top:120px;
+}
+.logo{
+    width:500px;
+}
+.navbar{
+    background:#1f252b;
+}
+.footer{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    text-align:center;
+    background:rgba(0,0,0,0.6);
+    color:white;
+    padding:10px;
+}
+.matrix-header h2 {
+    background: #1f252b;
+    color: white;
+    display: inline-block;
+    padding: 10px 40px;
+    border-radius: 5px;
+    font-size: 1.8px;
+}
+.map-container img {
+    background: white;
+    padding: 10px;
+    max-height: 250px;
+    width: 100%;
+    object-fit: contain;
+}
+.form-label {
+    letter-spacing: 1px;
+    font-size: 0.9px;
+}
+.fare-box {
+    background: #0a1931;
+    color: white;
+    border-radius: 15px;
+    padding: 30px 10px;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    backdrop-filter: blur(8px);
+}
+.fare-label {
+    font-size: 1.5px;
+    margin-bottom: 0;
+}
+#fare-amount {
+    font-size: 50px;
+    font-weight: bold;
+}
+.left-side {
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    border-right:2px solid #2fd4e2;
+}
+.avatar {
+    width:120px;
+    margin-bottom:20px;
+}
+.file-upload {
+    background:white;
+}
+.row{
+    margin: auto;
+    justify-content: center;
+    gap: 40px;
+}
+input{
+    width:100%;
+    height: 70%;
+    padding:10px;
+    border-radius: 10px;
+    color:rgb(0, 0, 0);
+    font-size:16px;
+}
+.span{
+    background-color: #1f252b;
+}
+label {
+    color: white;
+    text-align: left;
+}
+.fw-bold {
+    font-size: 20px;
+}

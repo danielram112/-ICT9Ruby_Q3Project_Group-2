@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eSakayMo Fare Matrix</title>
+
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Hiiiider -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="#">
+                <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" width="35" alt="logo">
+            </a>
+            <div class="navbar-nav me-auto">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link active" href="#">Fare Matrix</a>
+                <a class="nav-link" href="#">Schedule</a>
+                <a class="nav-link" href="#">Help</a>
+            </div>
+            <div class="d-flex">
+                <a href="#" class="nav-link text-white me-3 mt-1">Book Now</a>
+                <a href=registration.html class="btn btn-primary btn-sm px-3">Create Account</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CARDO dAlisay -->
+    <div class="container mt-5">
+        <div class="main-card">
+            <div class="matrix-header mb-4">
+                <h1><span style="color:#ff9f1c;">eSakayMo</span> Fare Matrix</h1>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <div class="map-container">
+                        <img src="https://mapa-metro.com/mapas/Manila/mapa-metro-manila2.png" class="img-fluid rounded" alt="Map">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">PICK-UP LOCATION:</label>
+                        <select type="text" class="form-control" id="pickup" placeholder="North Ave.">
+                            <option value="" disabled selected>Select a location</option>
+                            <option value="North Ave.">North Ave.</option>
+                            <option value="Quezon Ave.">Quezon Ave.</option>
+                            <option value="GMA Kamuning">GMA Kamuning</option>
+                            <option value="Araneta Center-Cubao">Araneta Center-Cubao</option>
+                            <option value="Santolan-Annapolis">Santolan-Annapolis</option>
+                            <option value="Ortigas">Ortigas</option>
+                            <option value="Shaw Boulevard">Shaw Boulevard</option>
+                            <option value="Boni">Boni</option>
+                            <option value="Guadalupe">Guadalupe</option>
+                            <option value="Buendia">Buendia</option>
+                            <option value="Ayala">Ayala</option>
+                            <option value="Magellanes">Magellanes</option>
+                            <option value="Taft Ave.">Taft Ave.</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">DROP-OFF LOCATION:</label>
+                        <select type="" class="form-control" id="dropoff">
+                            <option value="">Select a location</option>
+                            <option value="North Ave.">North Ave.</option>
+                            <option value="Quezon Ave.">Quezon Ave.</option>
+                            <option value="GMA Kamuning">GMA Kamuning</option>
+                            <option value="Araneta Center-Cubao">Araneta Center-Cubao</option>
+                            <option value="Santolan-Annapolis">Santolan-Annapolis</option>
+                            <option value="Ortigas">Ortigas</option>
+                            <option value="Shaw Boulevard">Shaw Boulevard</option>
+                            <option value="Boni">Boni</option>
+                            <option value="Guadalupe">Guadalupe</option>
+                            <option value="Buendia">Buendia</option>
+                            <option value="Ayala">Ayala</option>
+                            <option value="Magellanes">Magellanes</option>
+                            <option value="Taft Ave.">Taft Ave.</option>
+                        </select>
+                    </div>
+                    <div class="btn-group w-100" role="group">
+                        <button type="button" class="btn btn-warning" onclick="regularFare()">Regular Fare</button>
+                        <button type="button" class="btn btn-dark" onclick="discountFare()">Discounted Fare</button>
+                    </div>
+                </div>
+
+                <div class="col-md-34">
+                    <div class="fare-box">
+                        <h1 id="baseFare">₱ 30.00</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        Robles, Briones, Darimbang, Veran | 9 Ruby ©2026
+    </div>
+
+<script src="proj.js"></script>
+</body>
+</html>
